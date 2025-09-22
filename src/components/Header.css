@@ -14,11 +14,14 @@
 /* 왼쪽 섹션 스타일링 */
 .header-left {
   display: flex;
-  align-items: center;
   gap: 15px; /* 요소들 간의 간격 */
 }
 
-
+.logo-container {
+  display: flex;
+  align-items: center;
+  width: 120px; /* 로고 컨테이너 너비 설정 */
+}
 
 /* 로고 스타일링 */
 .header-logo {
@@ -31,6 +34,7 @@
 /* 메뉴(네비게이션) 스타일링 */
 .header-nav {
   display: flex;
+  align-items: center;
 }
 
 .nav-list {

@@ -1,15 +1,15 @@
 
 import React from 'react';
 import './Header.css';
-import { ReactComponent as HeaderLogo } from '../assests/images/Header_logo.svg'; 
 import koreaFlag from '../assests/images/Flag_of_South_Korea.svg.png';
+
 
 function Header() {
   return (
     <header className="main-header">
       <div className="header-left">
         <div className="logo-container">
-          <HeaderLogo className="header-logo" />
+        
         </div>
       </div>
       <nav className="header-nav">

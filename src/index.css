@@ -1,3 +1,5 @@
+/* src/index.css */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* 여기에 배경 이미지 스타일 추가 */
+  background-image: url('./assests/images/main_background.png'); /* 배경 이미지 경로 */
+  background-size: contain; /* 화면을 꽉 채우도록 */
+  background-position: center; /* 중앙 정렬 */
+  background-repeat: no-repeat; /* 반복 없음 */
+  background-attachment: fixed; /* 가장 중요: 배경 이미지를 뷰포트에 고정 */
+  min-height: 100vh; /* 페이지 최소 높이 설정 */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* 추가: 페이지 전체에 오버레이를 적용하여 배경 이미지 위 텍스트 가독성 높이기 */
+#root::before { /* #root 또는 body::before 로 적용 가능 */
+  content: '';
+  position: fixed; /* 뷰포트에 고정 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 어두운 오버레이 */
+  z-index: -1; /* 모든 콘텐츠 뒤에 위치 */
 }
