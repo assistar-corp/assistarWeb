@@ -1,0 +1,61 @@
+/* src/components/Header.css */
+
+.main-header {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 60px; /* 헤더 높이 설정 */
+  background-color: rgba(44,44,44,0.5);
+}
+
+/* 왼쪽 섹션 스타일링 */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* 요소들 간의 간격 */
+}
+
+
+
+/* 로고 스타일링 */
+.header-logo {
+  height: 40px;
+  width: auto;
+  fill: white; /* SVG 색상을 흰색으로 지정 */
+
+}
+
+/* 메뉴(네비게이션) 스타일링 */
+.header-nav {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none; /* 리스트 점 제거 */
+  display: flex;
+  gap: 30px; /* 메뉴 항목 간의 간격 */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none; /* 밑줄 제거 */
+  font-weight: bold;
+}
+
+/* 오른쪽 섹션 (국기) 스타일링 */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.flag-icon {
+  width: 30px;
+  height: auto;
+  border-radius: 20%;
+  border: 1px solid #ddd;
+}
