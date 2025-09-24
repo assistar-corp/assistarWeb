@@ -2,6 +2,7 @@
 import React from 'react';
 import './Header.css';
 import koreaFlag from '../assests/images/Flag_of_South_Korea.svg.png';
+import mainHeaderLogo from '../assests/images/Main_Header_logo.svg';
 
 
 function Header() {
@@ -9,7 +10,7 @@ function Header() {
     <header className="main-header">
       <div className="header-left">
         <div className="logo-container">
-        
+        <img src={mainHeaderLogo} alt="Assistar Logo" className="header-logo" />
         </div>
       </div>
       <nav className="header-nav">

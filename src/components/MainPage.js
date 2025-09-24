@@ -6,13 +6,14 @@ import Header from './Header';
 // import mainBackground from '../assests/images/main_background.jpg';
 import './MainPage.css';
 
+import PartnerLogos from './PartnerLogos';
+
 function MainPage() {
   return (
     <div className="main-page-container">
       <Header /> {/* 헤더는 맨 위에 고정됩니다. */}
       
-      {/* 배경 위에 나타날 메인 문구를 위한 섹션 (스크린샷의 2번 위치) */}
-      <section className="hero-content-overlay">
+      <section className="main-hero-section">
         <div className="main-title">
           <p>
             <h1 style={{color : "white"}}>ASSISTAR</h1>
@@ -22,7 +23,7 @@ function MainPage() {
         </div>
       </section>
 
-     
+      <PartnerLogos />
     </div>
   );
 }

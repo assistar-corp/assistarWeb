@@ -1,0 +1,30 @@
+.partner-logos-container {
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.partner-logos-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.logos-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  max-height: 80px;
+  max-width: 150px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+}
