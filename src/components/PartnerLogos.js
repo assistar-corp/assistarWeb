@@ -21,6 +21,9 @@ function PartnerLogos() {
         {logos.map((logo, index) => (
           <img key={index} src={logo.src} alt={logo.alt} className="partner-logo" />
         ))}
+        {logos.map((logo, index) => (
+          <img key={`clone-${index}`} src={logo.src} alt={logo.alt} className="partner-logo" />
+        ))}
       </div>
     </div>
   );

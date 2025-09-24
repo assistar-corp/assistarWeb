@@ -14,12 +14,13 @@ function MainPage() {
       <Header /> {/* 헤더는 맨 위에 고정됩니다. */}
       
       <section className="main-hero-section">
-        <div className="main-title">
-          <p>
-            <h1 style={{color : "white"}}>ASSISTAR</h1>
-            <br />
-            피트니스 라이브의 새로운 가치를 더합니다.
-          </p>
+        <div className="hero-extra-text">
+          <p>'기술 혁신 . 품질 우선 . 사람중심' 의 가치를 바탕으로</p>
+          <p>운동기구의 새로운 기준을 제시하는 기업</p>
+        </div>
+        <div className="hero-secon-text">
+          <p>피트니스 기구 및 시스템 전문 제조 기업</p>
+          <p>주식회사 어시스타 입니다. </p>
         </div>
       </section>
 

@@ -4,6 +4,7 @@ import IntroPage from './components/IntroPage';
 import MainPage from './components/MainPage';
 import IntroducePage from './components/IntroducePage';
 import PathPage from './components/PathPage';
+import Footer from './components/Footer';
 
 import './App.css';
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/introduce" element={<IntroducePage />} />
         <Route path="/path" element={<PathPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

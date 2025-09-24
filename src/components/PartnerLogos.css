@@ -1,7 +1,30 @@
 .partner-logos-container {
-  padding: 40px 20px;
-  background-color: #f7f7f7;
+  padding: 40px 0;
+  background-color: #ffffff;
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.partner-logos-container:before,
+.partner-logos-container:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.partner-logos-container:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.partner-logos-container:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
 .partner-logos-title {
@@ -11,20 +34,21 @@
 }
 
 .logos-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  display: inline-block;
+  animation: scroll 40s linear infinite;
 }
 
 .partner-logo {
-  max-height: 80px;
-  max-width: 150px;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
+  height: 100px;
+  margin: 0 40px;
+  display: inline-block;
 }
 
-.partner-logo:hover {
-  filter: grayscale(0%);
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
