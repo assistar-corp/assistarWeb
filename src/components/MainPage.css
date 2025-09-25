@@ -23,6 +23,21 @@
   position: relative; /* 자식 요소의 absolute 위치 지정을 위해 */
 }
 
+.main-text{
+  position: absolute;
+  left: 1000px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.second-text{
+  position: absolute;
+  bottom: 10px;
+  right: 90px;
+  font-size: 20px;
+
+}
+
 .hero-content {
   text-align: center;
   z-index: 1; /* 배경 이미지 위에 콘텐츠가 나타나도록 */
