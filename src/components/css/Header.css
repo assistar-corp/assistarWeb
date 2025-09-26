@@ -61,13 +61,30 @@
   text-decoration: none; /* 밑줄 제거 */
   font-weight: bold;
   transition: color 0.3s;
+  position: relative; /* ::after 가상 요소를 위한 포지션 */
 }
 
 .nav-link:hover {
   color: #ffffe0; /* 연한 노란색 */
 }
 
-.nav-item:hover::after {
+.nav-link.active {
+  color: #ffffe0; /* 활성 링크 색상 */
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px; /* 링크 텍스트 아래에 위치 */
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #ffffe0; /* 노란색 원 */
+  border-radius: 50%;
+}
+
+.nav-item:hover .nav-link::after {
   content: '';
   position: absolute;
   left: 50%;
