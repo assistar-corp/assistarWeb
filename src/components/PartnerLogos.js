@@ -16,7 +16,7 @@ const logos = [
 function PartnerLogos() {
   return (
     <div className="partner-logos-container">
-      <h2 className="partner-logos-title">Our Partners</h2>
+      <h2 className="partner-logos-title">Partners</h2>
       <div className="logos-grid">
         {/* 파트너사 로고 추가 부분 */}
         {logos.map((logo, index) => (
