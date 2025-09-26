@@ -65,7 +65,7 @@
 }
 
 .nav-link:hover {
-  color: #ffffe0; /* 연한 노란색 */
+  color: #DDBB52; /* 연한 노란색 */
 }
 
 .nav-link.active {
@@ -92,7 +92,7 @@
   transform: translateX(-50%);
   width: 6px;
   height: 6px;
-  background-color: #ffffe0;
+  background-color: #DDBB52;
   border-radius: 50%;
 }
 

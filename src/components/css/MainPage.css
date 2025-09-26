@@ -25,17 +25,28 @@
 
 .main-text{
   position: absolute;
-  left: 1200px;
-  font-size: 30px;
+  right: 50px;
+  font-size: 45px;
   font-weight: bold;
+  text-align: right;
+}
+
+.main-text strong {
+  color: #DDBB52;
 }
 
 .second-text{
   position: absolute;
-  bottom: 10px;
-  left: 1200px;
-  font-size: 20px;
+  bottom: 50px;
+  right: 50px;
+  font-size: 30px;
+  text-align: right;
+  font-weight: bold;
 
+}
+
+.second-text strong {
+  color: #DDBB52;
 }
 
 .hero-content {
