@@ -7,7 +7,7 @@ function IntroPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // 2초(4000ms) 후에 페이지를 전환
+    // 2초(2000ms) 후에 페이지를 전환
     const timer = setTimeout(() => {
       navigate('/main');
     }, 2000);
