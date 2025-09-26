@@ -3,6 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import './css/PathPage.css';
 
+
 function PathPage() {
   return (
     <div className="path-page">
@@ -16,7 +17,15 @@ function PathPage() {
         <section className="map-section">
           <h2>지도</h2>
           <div className="map-placeholder">
-            <p>지도 이미지 또는 임베드된 지도가 여기에 표시됩니다.</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.5097030860315!2d126.65367387715959!3d37.448685772069474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b79abb0b1b611%3A0xefaddd1c27fcca5a!2z7J247ZWY65Oc66a87IS87YSwIDHqtIA!5e0!3m2!1sko!2skr!4v1758865964517!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Map of Inha Dream Center"
+            ></iframe>
           </div>
         </section>
         <section className="directions-section">
@@ -31,7 +40,6 @@ function PathPage() {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 }
