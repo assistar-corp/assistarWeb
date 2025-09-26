@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
+
 import './css/IntroducePage.css';
 import introduceLogo from '../assests/images/introduce_logo.svg';
 
@@ -21,11 +21,25 @@ function IntroducePage() {
         <section className="intro-second-section">
           <div className="intro-footer">
             <img src={introduceLogo} alt="Assistar Logo" className="introduce-logo" />
-            <p>피트니스 기구 및 시, 주식회사 어시스타입니다.</p>
+            <div className="intro-footer-text">
+              <p>저는 오랫동안 '어떻게 하면 모든 사람의 신체적 고유성을 존중하며,</p>
+              <p>가장 안전하고 효율적인 성장을 이끌어낼 수 있을까?" 라는 질문을 품어왔습니다.</p>
+              <p>우리는 열정만으로 부상의 위험과 시행착오를 감수해야 했고, 운동의 잠재력을 온전히 끌어내지 못했습니다.</p>
+              <br />
+              <p>우리의 목표는 명확합니다.</p>
+              <p>생체 데이터를 기반으로 가장 안전하고 효율적인 성장 알고리즘을 제공하는 것.</p>
+              <p>모든 움직임이 최적의 퍼포먼스로 이어지는 놀라운 경험을 선사하는 것.</p>
+              <br />
+              <p>(주)어시스타는 여러분이 자신의 한계를 효과적으로 돌파하고,</p>
+              <p>이전에는 없던 새로운 가능성을 발견하도록 돕는 가장 강력한 파트너가 될 것을 약속드립니다.</p>
+              <br />
+              <br />
+              <p>주식회사 어시스타 대표이사 이 주 영</p>
+            </div>
           </div>
         </section>
       </main>
-      <Footer />
+
     </div>
   );
 }

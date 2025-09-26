@@ -7,6 +7,8 @@
 .introduce-main {
   flex-grow: 1;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .intro-section {
@@ -60,10 +62,11 @@
     width: 100%;
     background-color: #f9f9f9; /* Light background for contrast */
     color: #333;
-    padding: 2rem; /* Adjusted padding */
+    padding: 6rem 2rem; /* Adjusted padding */
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    flex-grow: 1;
 }
 
 .intro-footer {
