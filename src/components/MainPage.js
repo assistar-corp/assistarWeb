@@ -4,7 +4,7 @@ import React from 'react';
 import Header from './Header';
 // 이제 배경 이미지는 index.css에서 처리하므로 여기서 import 할 필요가 없습니다.
 // import mainBackground from '../assests/images/main_background.jpg';
-import './MainPage.css';
+import './css/MainPage.css';
 
 import PartnerLogos from './PartnerLogos';
 

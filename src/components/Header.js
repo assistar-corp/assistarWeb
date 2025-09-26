@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './Header.css';
+import './css/Header.css';
 import koreaFlag from '../assests/images/Flag_of_South_Korea.svg.png';
 import mainHeaderLogo from '../assests/images/Main_Header_logo.svg';
 

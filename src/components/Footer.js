@@ -1,6 +1,6 @@
 import React from 'react';
 import { Instagram, Youtube, Facebook } from "lucide-react";
-import './Footer.css';
+import './css/Footer.css';
 
 export default function Footer() {
   return (
