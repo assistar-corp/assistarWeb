@@ -1,4 +1,3 @@
-import React from 'react';
 import './css/PartnerLogos.css';
 
 import logo1 from '../assests/images/etc/logo_1.png';
@@ -11,20 +10,30 @@ const logos = [
   { src: logo2, alt: 'Partner 2' },
   { src: logo3, alt: 'Partner 3' },
   { src: logo4, alt: 'Partner 4' },
+
 ];
 
 function PartnerLogos() {
   return (
     <div className="partner-logos-container">
       <h2 className="partner-logos-title">Partners</h2>
-      <div className="logos-grid">
-        {/* 파트너사 로고 추가 부분 */}
-        {logos.map((logo, index) => (
-          <img key={index} src={logo.src} alt={logo.alt} className="partner-logo" />
-        ))}
-        {logos.map((logo, index) => (
-          <img key={`clone-${index}`} src={logo.src} alt={logo.alt} className="partner-logo" />
-        ))}
+      
+      <div className="logos-marquee">
+        
+        {/* 1. 원본 로고 목록 (logos-slide) */}
+        <div className="logos-slide">
+            {logos.map((logo, index) => (
+                <img key={`original-${index}`} src={logo.src} alt={logo.alt} className="partner-logo" />
+            ))}
+        </div>
+        
+        {/* 2. 복제 로고 목록 */}
+        <div className="logos-slide">
+            {logos.map((logo, index) => (
+                <img key={`duplicate-${index}`} src={logo.src} alt={logo.alt} className="partner-logo" />
+            ))}
+        </div>
+        
       </div>
     </div>
   );

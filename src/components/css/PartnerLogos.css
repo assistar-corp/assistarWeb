@@ -1,10 +1,10 @@
+/* 컨테이너 기본 스타일 */
 .partner-logos-container {
   padding: 40px 0;
   background-color: #ffffff;
   text-align: center;
-  overflow: hidden;
+  overflow: hidden; 
   position: relative;
-  white-space: nowrap;
 }
 
 .partner-logos-container:before,
@@ -31,24 +31,41 @@
   font-size: 24px;
   margin-bottom: 30px;
   color: #333;
+  z-index: 3; 
+  position: relative;
 }
 
-.logos-grid {
-  display: inline-block;
-  animation: scroll 40s linear infinite;
+.logos-marquee {
+  display: flex; /* 내부 슬라이드를 수평으로 나열 */
+  width: 200%; /* 필수: 슬라이드 2개를 포함하도록 너비를 200%로 설정 */
+  animation: scroll 40s linear infinite; /* 애니메이션 적용 */
+  white-space: nowrap; /* 내부 요소가 줄바꿈되지 않게 설정 */
 }
 
+/* 개별 로고 슬라이드 (원본 + 복제본) */
+.logos-slide {
+  display: flex;
+  flex-shrink: 0; /* 축소되지 않도록 설정 */
+  justify-content: space-around; /* 로고 간격 분산 */
+  align-items: center;
+  width: 50%; /* 필수: 전체 .logos-marquee의 50% 너비를 차지하게 설정 */
+}
+
+/* 개별 로고 스타일 */
 .partner-logo {
   height: 100px;
+  width: 150px; 
+  object-fit: contain;
   margin: 0 40px;
-  display: inline-block;
 }
 
+/* Keyframes 애니메이션 정의 (무한 루프) */
 @keyframes scroll {
   0% {
     transform: translateX(0%);
   }
+  /* 100% 지점: 정확히 슬라이드 하나(50%) 만큼 왼쪽으로 이동하여 루프 생성 */
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-50%); 
   }
 }
