@@ -17,9 +17,11 @@ function IntroducePage() {
             <p>'기술 혁신 . 품질 우선. 사람중심' 을 핵심가치로 삼고, 모든 사람이 신체적 한계를 넘어</p>
             <p>성장하는 즐거움을 누리게 하는 것을 궁극적인 목표로 삼고 있습니다.</p>
           </div>
+        </section>
+        <section className="intro-second-section">
           <div className="intro-footer">
             <img src={introduceLogo} alt="Assistar Logo" className="introduce-logo" />
-            <p>피트니스 기구 및 시스템 전문 제조 기업, 주식회사 어시스타입니다.</p>
+            <p>피트니스 기구 및 시, 주식회사 어시스타입니다.</p>
           </div>
         </section>
       </main>
