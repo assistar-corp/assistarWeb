@@ -12,9 +12,9 @@ function Header() {
   return (
     <header className="main-header">
       <div className="header-left">
-        <div className="logo-container">
-        <img src={mainHeaderLogo} alt="Assistar Logo" className="header-logo" />
-        </div>
+        <Link to="/" className="logo-container">
+          <img src={mainHeaderLogo} alt="Assistar Logo" className="header-logo" />
+        </Link>
       </div>
       <nav className="header-nav">
         <ul className="nav-list">
