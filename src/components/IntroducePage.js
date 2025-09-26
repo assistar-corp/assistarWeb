@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import './css/IntroducePage.css';
+import introduceLogo from '../assests/images/introduce_logo.svg';
 
 function IntroducePage() {
   return (
@@ -9,23 +10,17 @@ function IntroducePage() {
       <Header />
       <main className="introduce-main">
         <section className="intro-section">
-          <h1>회사 소개</h1>
-          <p>어시스타는 기술 혁신, 품질 우선, 사람 중심의 가치를 바탕으로 운동기구의 새로운 기준을 제시하는 기업입니다.</p>
-        </section>
-        <section className="vision-section">
-          <h2>우리의 비전</h2>
-          <p>우리는 모든 사람이 건강하고 활기찬 삶을 살 수 있도록 돕는 최고의 피트니스 파트너가 되는 것을 목표로 합니다.</p>
-        </section>
-        <section className="history-section">
-          <h2>연혁</h2>
-          <ul>
-            <li>2025년: (주)어시스타 설립</li>
-            <li>2026년: 첫 번째 스마트 피트니스 기구 출시 (예정)</li>
-          </ul>
-        </section>
-        <section className="team-section">
-          <h2>팀 소개</h2>
-          <p>어시스타는 열정적이고 숙련된 엔지니어, 디자이너, 피트니스 전문가들로 구성되어 있습니다.</p>
+          <div className="intro-content">
+            <h1>비전</h1>
+            <br />
+            <p>저희 어시스타는인간의 잠재력을 깨우고 건강한 삶의 미래를 개척하는 피트니스 테크톨로지 선도기업을 지향합니다.</p>
+            <p>'기술 혁신 . 품질 우선. 사람중심' 을 핵심가치로 삼고, 모든 사람이 신체적 한계를 넘어</p>
+            <p>성장하는 즐거움을 누리게 하는 것을 궁극적인 목표로 삼고 있습니다.</p>
+          </div>
+          <div className="intro-footer">
+            <img src={introduceLogo} alt="Assistar Logo" className="introduce-logo" />
+            <p>피트니스 기구 및 시스템 전문 제조 기업, 주식회사 어시스타입니다.</p>
+          </div>
         </section>
       </main>
       <Footer />

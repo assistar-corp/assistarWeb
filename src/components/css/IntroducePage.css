@@ -11,19 +11,19 @@
 
 .intro-section {
   width: 100%;
-  min-height: 60vh; /* Adjust height as needed */
+  min-height: 80vh; /* Increased height */
   background-image: url('../../assests/images/introduce.PNG');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between; /* Pushes content and footer apart */
   align-items: center;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   position: relative;
-  padding: 2rem;
+  padding: 4rem 2rem; /* Increased padding */
   box-sizing: border-box;
 }
 
@@ -38,9 +38,15 @@
   z-index: 1;
 }
 
-.intro-section h1, .intro-section p {
+.intro-content, .intro-footer {
     position: relative;
     z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.intro-content {
+    text-align: center;
 }
 
 .intro-section h1 {
@@ -51,6 +57,24 @@
 .intro-section p {
   font-size: 1.5rem;
   text-align: center;
+}
+
+.intro-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the items */
+    gap: 2rem; /* Space between logo and text */
+}
+
+.introduce-logo {
+  width: 200px; /* Adjust size as needed */
+  margin: 0;
+}
+
+.intro-footer p {
+    font-size: 1.2rem; /* Smaller font for the footer text */
+    text-align: left;
+    margin: 0;
 }
 
 .vision-section,
