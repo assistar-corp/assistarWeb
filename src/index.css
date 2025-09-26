@@ -1,6 +1,6 @@
-/* src/index.css */
 
 body {
+  /* 글로벌 글꼴 수정 */
   margin: 0;
   font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Nanum Gothic', Dotum, sans-serif;
   -webkit-font-smoothing: antialiased;
