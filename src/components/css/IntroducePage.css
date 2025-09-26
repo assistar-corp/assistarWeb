@@ -13,7 +13,7 @@
 
 .intro-section {
   width: 100%;
-  min-height: 80vh; /* Increased height */
+  min-height: 50vh; /* Increased height */
   background-image: url('../../assests/images/introduce.PNG');
   background-size: cover;
   background-position: center;
@@ -73,7 +73,7 @@
     display: flex;
     align-items: center;
     justify-content: center; /* Center the items */
-    gap: 2rem; /* Space between logo and text */
+    gap: 5rem; /* Space between logo and text */
     max-width: 1200px;
     width: 100%;
 }
