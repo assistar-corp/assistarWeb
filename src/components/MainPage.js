@@ -1,9 +1,5 @@
-// src/components/MainPage.js
-
 import React from 'react';
 import Header from './Header';
-// 이제 배경 이미지는 index.css에서 처리하므로 여기서 import 할 필요가 없습니다.
-// import mainBackground from '../assests/images/main_background.jpg';
 import './css/MainPage.css';
 
 import PartnerLogos from './PartnerLogos';
@@ -11,7 +7,7 @@ import PartnerLogos from './PartnerLogos';
 function MainPage() {
   return (
     <div className="main-page-container">
-      <Header /> {/* 헤더는 맨 위에 고정됩니다. */}
+      <Header /> 
       
       <section className="main-hero-section">
         <div className="main-text">
