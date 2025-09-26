@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './css/Header.css';
 import koreaFlag from '../assests/images/Flag_of_South_Korea.svg.png';
 import mainHeaderLogo from '../assests/images/Main_Header_logo.svg';
@@ -16,19 +17,19 @@ function Header() {
       <nav className="header-nav">
         <ul className="nav-list">
           <li className="nav-item">
-            <a href="#company" className="nav-link">
+            <Link to="/main" className="nav-link">
               홈
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#company" className="nav-link">
+            <Link to="/introduce" className="nav-link">
               회사소개
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#directions" className="nav-link">
+            <Link to="/path" className="nav-link">
               오시는 길
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
