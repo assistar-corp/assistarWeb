@@ -10,13 +10,14 @@ const logos = [
   { src: logo2, alt: 'Partner 2' },
   { src: logo3, alt: 'Partner 3' },
   { src: logo4, alt: 'Partner 4' },
+  // 로고 추가 부분
 
 ];
 
 function PartnerLogos() {
   return (
     <div className="partner-logos-container">
-      <h2 className="partner-logos-title">Partners</h2>
+      <h2 className="partner-logos-title">파트너</h2>
       
       <div className="logos-marquee">
         

@@ -96,7 +96,6 @@
   border-radius: 50%;
 }
 
-
 /* 오른쪽 섹션 (국기) 스타일링 */
 .header-right {
   display: flex;
@@ -110,4 +109,32 @@
   height: auto;
   border-radius: 20%;
   border: 1px solid #ddd;
+}
+
+/* 드롭다운 메뉴 스타일 */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(10, 10, 10, 0.8);
+  list-style: none;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 120px;
+  text-align: center;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+  color: #DDBB52;
 }

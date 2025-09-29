@@ -1,13 +1,13 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './css/Header.css';
 import koreaFlag from '../assests/images/Flag_of_South_Korea.svg.png';
 import mainHeaderLogo from '../assests/images/Main_Header_logo.svg';
 
-
 function Header() {
   const location = useLocation();
+  const [isCompanyMenuOpen, setCompanyMenuOpen] = useState(false);
 
   return (
     <header className="main-header">
@@ -23,10 +23,20 @@ function Header() {
               홈
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/introduce" className={`nav-link ${location.pathname === '/introduce' ? 'active' : ''}`}>
-              회사소개
+          <li 
+            className="nav-item"
+            onMouseEnter={() => setCompanyMenuOpen(true)}
+            onMouseLeave={() => setCompanyMenuOpen(false)}
+          >
+            <Link to="/introduce/overview" className={`nav-link ${location.pathname.startsWith('/introduce') ? 'active' : ''}`}>
+              회사
             </Link>
+            {isCompanyMenuOpen && (
+              <ul className="dropdown-menu">
+                <li><Link to="/introduce/overview">회사 개요</Link></li>
+                <li><Link to="/introduce/ceo">CEO 인사말</Link></li>
+              </ul>
+            )}
           </li>
           <li className="nav-item">
             <Link to="/path" className={`nav-link ${location.pathname === '/path' ? 'active' : ''}`}>
