@@ -10,13 +10,16 @@ function PathPage() {
       <main className="path-main">
         <section className="path-intro-section">
           <div className="path-intro-content">
-            <h1>오시는 길</h1>
+            <h1>COMPANY</h1>
+            <h2>위치를 안내해드립니다.</h2>
           </div>
         </section>
         <section className="path-body-section">
           <div className="location-section">
-            <h2>주식회사 어시스타 본사 및 R&D 센터</h2>
-            <p>{headquarterAddress}</p>
+            <div className="location-description">
+              <h2>주식회사 어시스타 본사 및 R&D 센터</h2>
+              <p>{headquarterAddress}</p>
+            </div>
             <div className="map-container">
               <iframe
                 src={`https://maps.google.com/maps?q=${encodeURI(headquarterAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
@@ -32,8 +35,10 @@ function PathPage() {
             </div>
           </div>
           <div className="location-section">
-            <h2>주식회사 어시스타 청라국제도시 지점</h2>
-            <p>{cheongnaAddress}</p>
+            <div className="location-description">
+              <h2>주식회사 어시스타 청라국제도시 지점</h2>
+              <p>{cheongnaAddress}</p>
+            </div>
             <div className="map-container">
               <iframe
                 src={`https://maps.google.com/maps?q=${encodeURI(cheongnaAddress)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
