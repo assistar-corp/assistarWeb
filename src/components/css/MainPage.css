@@ -19,35 +19,30 @@
   justify-content: center; /* 내용을 가로 중앙 정렬 */
   align-items: center; /* 내용을 세로 중앙 정렬 */
   color: white; /* 배경 이미지 위 텍스트 색상 */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* 텍스트 그림자 추가 */
   position: relative; /* 자식 요소의 absolute 위치 지정을 위해 */
+}
+
+.main-hero-section p {
+  font-size: 1.5rem;
+}
+
+.main-page-logo {
+  position: absolute;
+  top: 310px;
+  right: 380px;
+  width: 250px;
+  height: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
 }
 
 .main-text{
   position: absolute;
-  right: 50px;
-  font-size: 45px;
-  font-weight: bold;
+  right: 300px;
+  top: 400px;
   text-align: right;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
 }
 
-.main-text strong {
-  color: #DDBB52;
-}
-
-.second-text{
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-  font-size: 30px;
-  text-align: right;
-  font-weight: bold;
-
-}
-
-.second-text strong {
-  color: #DDBB52;
-}
 
 .hero-content {
   text-align: center;
@@ -62,7 +57,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* 어두운 오버레이 */
+  background-color: rgba(0, 0, 0, 0.3); /* 어두운 오버레이 */
   z-index: 0; /* 배경 이미지와 콘텐츠 사이 */
 }
 
