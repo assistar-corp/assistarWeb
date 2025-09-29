@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './css/Header.css';
 import koreaFlag from '../assests/images/Flag_of_South_Korea.svg.png';
@@ -8,6 +8,18 @@ import mainHeaderLogo from '../assests/images/Main_Header_logo.svg';
 function Header() {
   const location = useLocation();
   const [isCompanyMenuOpen, setCompanyMenuOpen] = useState(false);
+  const timeoutRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    clearTimeout(timeoutRef.current);
+    setCompanyMenuOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setCompanyMenuOpen(false);
+    }, 200);
+  };
 
   return (
     <header className="main-header">
@@ -25,14 +37,18 @@ function Header() {
           </li>
           <li 
             className="nav-item"
-            onMouseEnter={() => setCompanyMenuOpen(true)}
-            onMouseLeave={() => setCompanyMenuOpen(false)}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
             <Link to="/introduce/overview" className={`nav-link ${location.pathname.startsWith('/introduce') ? 'active' : ''}`}>
               회사
             </Link>
             {isCompanyMenuOpen && (
-              <ul className="dropdown-menu">
+              <ul 
+                className="dropdown-menu"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
                 <li><Link to="/introduce/overview">회사 개요</Link></li>
                 <li><Link to="/introduce/ceo">CEO 인사말</Link></li>
               </ul>

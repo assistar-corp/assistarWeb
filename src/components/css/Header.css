@@ -114,14 +114,14 @@
 /* 드롭다운 메뉴 스타일 */
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 53px;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(10, 10, 10, 0.8);
   list-style: none;
   padding: 10px;
-  margin: 10px 0 0 0;
-  border-radius: 5px;
+  margin: 0;
+  border-radius:2px;
   display: flex;
   flex-direction: column;
   gap: 10px;
