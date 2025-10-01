@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 120px; /* 좌우 패딩 설정 */
+  padding: 10px 140px; /* 좌우 패딩 설정 */
   box-sizing: border-box; /* 패딩을 너비에 포함하여 계산 */
   height: 90px; /* 헤더 높이 설정 */
   background-color: rgba(10, 10, 10, 0.5);
