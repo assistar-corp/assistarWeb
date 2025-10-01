@@ -87,5 +87,6 @@
 .ceo-intro-footer p {
     font-size: 1.5rem; /* 텍스트 사이즈 조정 */
     text-align: left;
+    line-height: 1.5;
     margin: 0;
 }
