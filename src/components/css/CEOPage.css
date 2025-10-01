@@ -74,18 +74,18 @@
     display: flex;
     align-items: center;
     justify-content: center; /* Center the items */
-    gap: 5rem; /* Space between logo and text */
+    gap: 10rem; /* 로고랑 text 사이 간격 */
     max-width: 1200px;
     width: 100%;
 }
 
 .ceo-introduce-logo {
-  width: 200px; /* Adjust size as needed */
+  width: 370px; /* 회사 로고 사이즈 조정 */
   margin: 0;
 }
 
 .ceo-intro-footer p {
-    font-size: 1.2rem; /* Smaller font for the footer text */
+    font-size: 1.3rem; /* 텍스트 사이즈 조정 */
     text-align: center;
     margin: 0;
 }
