@@ -6,10 +6,10 @@ import logo3 from '../assests/images/etc/logo_3.jpg';
 import logo4 from '../assests/images/etc/logo_4.jpg';
 
 const logos = [
-  { src: logo1, alt: 'Partner 1' },
-  { src: logo2, alt: 'Partner 2' },
-  { src: logo3, alt: 'Partner 3' },
-  { src: logo4, alt: 'Partner 4' },
+  { src: logo1, alt: 'Partner 1', id: 'logo-1' },
+  { src: logo2, alt: 'Partner 2', id: 'logo-2' },
+  { src: logo3, alt: 'Partner 3', id: 'logo-3' },
+  { src: logo4, alt: 'Partner 4', id: 'logo-4' },
   // 로고 추가 부분
 
 ];
@@ -24,14 +24,18 @@ function PartnerLogos() {
         {/* 1. 원본 로고 목록 (logos-slide) */}
         <div className="logos-slide">
             {logos.map((logo, index) => (
-                <img key={`original-${index}`} src={logo.src} alt={logo.alt} className="partner-logo" />
+                <div key={`original-${index}`} className={`logo-container ${logo.id}`}>
+                    <img src={logo.src} alt={logo.alt} className="partner-logo" />
+                </div>
             ))}
         </div>
         
         {/* 2. 복제 로고 목록 */}
         <div className="logos-slide">
             {logos.map((logo, index) => (
-                <img key={`duplicate-${index}`} src={logo.src} alt={logo.alt} className="partner-logo" />
+                <div key={`duplicate-${index}`} className={`logo-container ${logo.id}`}>
+                    <img src={logo.src} alt={logo.alt} className="partner-logo" />
+                </div>
             ))}
         </div>
         

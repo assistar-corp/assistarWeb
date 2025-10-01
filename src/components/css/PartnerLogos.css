@@ -51,12 +51,20 @@
   width: 50%; /* 필수: 전체 .logos-marquee의 50% 너비를 차지하게 설정 */
 }
 
+.logo-container {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px;
+}
+
 /* 개별 로고 스타일 */
 .partner-logo {
-  height: 100px;
-  width: 150px; 
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
-  margin: 0 40px;
 }
 
 /* Keyframes 애니메이션 정의 (무한 루프) */
@@ -68,4 +76,22 @@
   100% {
     transform: translateX(-50%); 
   }
+}
+
+/* 개별 로고 크기 조정 */
+
+.logo-container.logo-1 .partner-logo { /* 인천대 로고 */
+  transform: scale(1.7);
+}
+
+.logo-container.logo-2 .partner-logo { /* 한국 알앤디 로고*/
+  transform: scale(2.0);
+}
+
+.logo-container.logo-3 .partner-logo { /* 인하대 로고 */
+  transform: scale(1.5);
+}
+
+.logo-container.logo-4 .partner-logo { /* 기술보증 로고 */
+  transform: scale(1.0);
 }

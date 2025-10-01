@@ -76,13 +76,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 10rem; /* 텍스트랑 사진 사이 gap 조정  */ 
     max-width: 1200px;
     width: 100%;
 }
 
-.introduce-logo {
-  width: 430px;
+.introduce-logo { 
+  width: 430px; /* 사진 사이즈 조정 */
   height: auto;
 }
 
