@@ -30,7 +30,7 @@ export default function Footer() {
                 주소 : 22212 인천광역시 미추홀구 인하로100, 인하드림센터1관 605호 / 606호&nbsp;&nbsp;&nbsp;&nbsp;대표전화 :
                 010-4556-4948
               </p>
-              <p style={{ marginTop: '1.5rem' }}>
+              <p className="copyright">
                 © 2025 <span style={{ fontWeight: '700' }}>어시스타</span>, Inc. All Rights Reserved
               </p>
             </div>
