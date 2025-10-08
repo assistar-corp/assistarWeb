@@ -95,37 +95,3 @@
 .logo-container.logo-4 .partner-logo { /* 기술보증 로고 */
   transform: scale(1.0);
 }
-
-@media (max-width: 768px) {
-  .partner-logos-container:before,
-  .partner-logos-container:after {
-    width: 150px;
-  }
-
-  .logo-container {
-    width: 120px;
-    height: 80px;
-    margin: 0 20px;
-  }
-
-  .logos-marquee {
-    animation-duration: 30s;
-  }
-}
-
-@media (max-width: 480px) {
-  .partner-logos-container:before,
-  .partner-logos-container:after {
-    width: 100px;
-  }
-
-  .logo-container {
-    width: 100px;
-    height: 60px;
-    margin: 0 15px;
-  }
-
-  .logos-marquee {
-    animation-duration: 20s;
-  }
-}
