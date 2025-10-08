@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a999be1c.css",
+    "main.js": "/static/js/main.89e83663.js",
+    "static/media/introduce1.PNG": "/static/media/introduce1.303fca2a0559e992da34.PNG",
+    "static/media/introduce.PNG": "/static/media/introduce.e52f2d5849dbd9296cea.PNG",
+    "static/media/introduce2.PNG": "/static/media/introduce2.fad5ce3eb9e752f28120.PNG",
+    "static/media/main_background.png": "/static/media/main_background.2bc2bcfe5d40c1c32f40.png",
+    "static/media/path.jpg": "/static/media/path.85f8d3faff4b459a3a80.jpg",
+    "static/media/Flag_of_South_Korea.svg.png": "/static/media/Flag_of_South_Korea.svg.d56d8fd46516b8dd1358.png",
+    "static/media/logo_4.jpg": "/static/media/logo_4.277a4bb5625c0d3401c3.jpg",
+    "static/media/intro_logo.svg": "/static/media/intro_logo.fb7e0cb13e25da9a9c83b1912d2f05cf.svg",
+    "static/media/Main_Header_logo.svg": "/static/media/Main_Header_logo.c65abf1c7e07bb9364bbcd1dabc58f53.svg",
+    "static/media/introduce_logo.svg": "/static/media/introduce_logo.4b4133d66e2a16591d61c5c7f40fb202.svg",
+    "static/media/logo_3.jpg": "/static/media/logo_3.181c1ebf44eeaedfee57.jpg",
+    "static/media/logo_2.jpg": "/static/media/logo_2.27f68dd8ec37d43e9174.jpg",
+    "static/media/mainpage_logo.svg": "/static/media/mainpage_logo.02f81518d887598f04d6d634eacb227a.svg",
+    "index.html": "/index.html",
+    "main.a999be1c.css.map": "/static/css/main.a999be1c.css.map",
+    "main.89e83663.js.map": "/static/js/main.89e83663.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a999be1c.css",
+    "static/js/main.89e83663.js"
+  ]
+}
