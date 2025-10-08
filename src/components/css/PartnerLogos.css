@@ -81,11 +81,11 @@
 /* 개별 로고 크기 조정 */
 
 .logo-container.logo-1 .partner-logo { /* 기술보증 로고 */
-  transform: scale(1.5);
+  transform: scale(1.7);
 }
 
 .logo-container.logo-2 .partner-logo { /* 네임택 로고*/
-  transform: scale(1.0);
+  transform: scale(0.8);
 }
 
 .logo-container.logo-3 .partner-logo { /* 엔디바이스 로고 */

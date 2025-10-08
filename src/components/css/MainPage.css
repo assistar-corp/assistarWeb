@@ -44,7 +44,7 @@
 .main-text{
   text-align: center;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
-  margin-top: -50px; /* 로고와의 간격을 줄이기 위해 음수 마진 적용 */
+  margin-top: -60px; /* 로고와의 간격을 줄이기 위해 음수 마진 적용 */
 }
 
 
