@@ -85,8 +85,13 @@
 }
 
 .ceo-intro-footer p {
-    font-size: 1.5rem; /* 텍스트 사이즈 조정 */
+    font-size: 1.1rem; /* 텍스트 사이즈 조정 */
     text-align: left;
-    line-height: 1.5;
+    line-height: 1.9;
     margin: 0;
+}
+
+.CEOname {
+    font-size: 1.3rem;
+    margin-top:50px;
 }

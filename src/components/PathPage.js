@@ -18,7 +18,7 @@ function PathPage() {
           <div className="location-section">
             <div className="location-description">
               <h2>주식회사 어시스타 본사 및 R&D 센터</h2>
-              <p>{headquarterAddress}</p>
+              <p>{headquarterAddress} / 606호</p>
             </div>
             <div className="map-container">
               <iframe
@@ -36,7 +36,7 @@ function PathPage() {
           </div>
           <div className="location-section">
             <div className="location-description">
-              <h2>주식회사 어시스타 청라국제도시 지점</h2>
+              <h2>청라국제도시 지점</h2>
               <p>{cheongnaAddress}</p>
             </div>
             <div className="map-container">

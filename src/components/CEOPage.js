@@ -31,7 +31,7 @@ function CEOPage() {
               <br />
               <br />
               <br />
-              <p><strong>주식회사 어시스타 대표이사 이 주 영</strong></p>
+              <h3><strong>주식회사 어시스타 대표이사 이 주 영</strong></h3>
             </div>
           </div>
         </section>
