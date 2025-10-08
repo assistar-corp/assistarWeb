@@ -16,30 +16,33 @@
   background-position: center; /* 이미지를 중앙에 정렬 */
   background-repeat: no-repeat; /* 이미지 반복 방지 */
   display: flex;
-  justify-content: center; /* 내용을 가로 중앙 정렬 */
-  align-items: center; /* 내용을 세로 중앙 정렬 */
+  justify-content: flex-end; /* 가로 우측 정렬 */
+  align-items: flex-start; /* 세로 상단 정렬 */
   color: white; /* 배경 이미지 위 텍스트 색상 */
-  position: relative; /* 자식 요소의 absolute 위치 지정을 위해 */
+  padding-top: 15vh;
+  padding-right: 15vw;
+  box-sizing: border-box;
 }
 
 .main-hero-section p {
   font-size: 1.5rem;
 }
 
+.hero-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-page-logo {
-  position: absolute;
-  top: 310px;
-  right: 380px;
   width: 250px;
   height: auto;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
+  margin-bottom: 1px; /* 로고와 텍스트 사이 간격 */
 }
 
 .main-text{
-  position: absolute;
-  right: 300px;
-  top: 400px;
-  text-align: right;
+  text-align: center;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
 }
 

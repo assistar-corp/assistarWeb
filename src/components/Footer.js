@@ -23,15 +23,15 @@ export default function Footer() {
             </div>
             <div>
               <p>
-                상호 : 주식회사 어시스타&nbsp;&nbsp;&nbsp;&nbsp;CEO : 이주영&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호 :
+                상호 : 주식회사 어시스타&nbsp;&nbsp;&nbsp;&nbsp;대표이사 : 이주영&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호 :
                 5468603128
               </p>
               <p>
-                주소 : 22212 인천광역시 미추홀구 인하로100, 인하드림센터1관 605호 / 606호&nbsp;&nbsp;&nbsp;&nbsp;대표전화 :
+                주소 : 22212 인천광역시 미추홀구 인하로100, 인하드림센터1관 605호 &nbsp;&nbsp;&nbsp;&nbsp;대표전화 :
                 010-4556-4948
               </p>
               <p className="copyright">
-                © 2025 <span style={{ fontWeight: '700' }}>어시스타</span>, Inc. All Rights Reserved
+                © 2025 <span style={{ fontWeight: '900' }}>어시스타</span>, Inc. All Rights Reserved
               </p>
             </div>
           </div>

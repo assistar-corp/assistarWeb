@@ -1,10 +1,20 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  src: url('./assests/fonts/NotoSansKR-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   /* 글로벌 글꼴 수정 */
   margin: 0;
-  font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Nanum Gothic', Dotum, sans-serif;
+  font-family: 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Nanum Gothic', Dotum, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 code {

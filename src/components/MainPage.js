@@ -11,8 +11,10 @@ function MainPage() {
       <Header /> 
       
       <section className="main-hero-section">
-        <img src={mainPageLogo} alt="Main Page Logo" className="main-page-logo" />
-        <p className='main-text'>피트니스 라이프의 새로운 가치를 만듭니다.</p>
+        <div className="hero-content-wrapper">
+          <img src={mainPageLogo} alt="Main Page Logo" className="main-page-logo" />
+          <p className='main-text'>피트니스 라이프의 새로운 가치를 만듭니다.</p>
+        </div>
       </section>
 
       <PartnerLogos />
