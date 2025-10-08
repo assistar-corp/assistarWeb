@@ -95,3 +95,49 @@
     font-size: 1.3rem;
     margin-top:50px;
 }
+
+@media (max-width: 768px) {
+  .ceo-intro-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .ceo-intro-section p {
+    font-size: 1.2rem;
+  }
+
+  .ceo-intro-footer {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .ceo-introduce-logo {
+    width: 300px;
+  }
+
+  .ceo-intro-footer p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ceo-intro-section h1 {
+    font-size: 2rem;
+  }
+
+  .ceo-intro-section p {
+    font-size: 1rem;
+  }
+
+  .ceo-introduce-logo {
+    width: 250px;
+  }
+
+  .ceo-intro-footer p {
+    font-size: 1rem;
+  }
+
+  .CEOname {
+    font-size: 1.1rem;
+  }
+}

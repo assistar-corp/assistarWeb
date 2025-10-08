@@ -124,3 +124,53 @@
     margin-bottom: 0rem;
     font-weight: 450;
 }
+
+@media (max-width: 768px) {
+  .intro-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro-section p {
+    font-size: 1.2rem;
+  }
+
+  .intro-new-layout {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .introduce-logo {
+    width: 300px;
+  }
+
+  .vision-text-section, .user-content-section {
+    text-align: center;
+  }
+
+  .short-vertical-line {
+    display: none; /* Hide the line on smaller screens as it might not look good */
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-section h1 {
+    font-size: 2rem;
+  }
+
+  .intro-section p {
+    font-size: 1rem;
+  }
+
+  .introduce-logo {
+    width: 250px;
+  }
+
+  .vision-title {
+    font-size: 1.5rem;
+  }
+
+  .vision-subtitle {
+    font-size: 1.8rem;
+  }
+}
