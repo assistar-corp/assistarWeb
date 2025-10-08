@@ -3,7 +3,6 @@
 ## 🚀 배포 환경
 - Framework: React
 - Hosting: GitHub Pages
-- Repository: https://github.com/junheeee8462/assistarWeb
 - Domain: https://assistar.co.kr
 - DNS: Gabia
 
