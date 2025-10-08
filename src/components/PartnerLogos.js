@@ -1,17 +1,22 @@
 import './css/PartnerLogos.css';
 
-import logo1 from '../assests/images/etc/logo_1.png';
-import logo2 from '../assests/images/etc/logo_2.jpg';
-import logo3 from '../assests/images/etc/logo_3.jpg';
-import logo4 from '../assests/images/etc/logo_4.jpg';
+import logo1 from '../assests/images/etc/logo_1.svg';
+import logo2 from '../assests/images/etc/logo_2.PNG';
+import logo3 from '../assests/images/etc/logo_3.PNG';
+import logo4 from '../assests/images/etc/logo_4.svg';
+import logo5 from '../assests/images/etc/logo_5.svg';
+import logo6 from '../assests/images/etc/logo_6.svg';
+import logo7 from '../assests/images/etc/logo_7.jpg';
+
 
 const logos = [
-  { src: logo1, alt: 'Partner 1', id: 'logo-1' },
-  { src: logo2, alt: 'Partner 2', id: 'logo-2' },
-  { src: logo3, alt: 'Partner 3', id: 'logo-3' },
-  { src: logo4, alt: 'Partner 4', id: 'logo-4' },
-  // 로고 추가 부분
-
+  { src: logo1, alt: 'Partner 1', id: 'logo-1' }, // 기술 보증 로고
+  { src: logo2, alt: 'Partner 2', id: 'logo-2' }, // 네임텍 로고
+  { src: logo3, alt: 'Partner 3', id: 'logo-3' }, // 엔디바이스 로고
+  { src: logo4, alt: 'Partner 4', id: 'logo-4' }, // 인천광역시 로고
+  { src: logo5, alt: 'Partner 5', id: 'logo-5' }, // 인천대 로고
+  { src: logo6, alt: 'Partner 6', id: 'logo-6' }, // 인하대 로고
+  { src: logo7, alt: 'Partner 7', id: 'logo-7' }, // 알앤디 로고
 ];
 
 function PartnerLogos() {

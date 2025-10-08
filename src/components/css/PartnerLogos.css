@@ -95,3 +95,7 @@
 .logo-container.logo-4 .partner-logo { /* 기술보증 로고 */
   transform: scale(1.0);
 }
+
+.logo-container.logo-5 .partner-logo { 
+  transform: scale(1.8);
+}
