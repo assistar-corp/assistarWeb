@@ -105,3 +105,6 @@
 .logo-container.logo-7 .partner-logo { /* 알앤디 로고 */
   transform: scale(1.2);
 }
+.logo-container.logo-8 .partner-logo { /* 리본 로고 */
+  transform: scale(0.4);
+}

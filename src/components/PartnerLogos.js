@@ -7,6 +7,7 @@ import logo4 from '../assests/images/etc/logo_4.svg';
 import logo5 from '../assests/images/etc/logo_5.svg';
 import logo6 from '../assests/images/etc/logo_6.svg';
 import logo7 from '../assests/images/etc/logo_7.jpg';
+import logo8 from '../assests/images/etc/logo_8.png'; 
 
 
 const logos = [
@@ -17,6 +18,7 @@ const logos = [
   { src: logo5, alt: 'Partner 5', id: 'logo-5' }, // 인천대 로고
   { src: logo6, alt: 'Partner 6', id: 'logo-6' }, // 인하대 로고
   { src: logo7, alt: 'Partner 7', id: 'logo-7' }, // 알앤디 로고
+  { src: logo8, alt: 'Partner 8', id: 'logo-8' }, // 리본 로고
 ];
 
 function PartnerLogos() {
