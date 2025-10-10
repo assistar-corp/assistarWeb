@@ -72,89 +72,18 @@ main {
   /* 또는 모든 요소가 함께 스크롤되도록 할 수도 있습니다. */
 }
 
-/* src/components/MainPage.css */
-
-.main-page-container {
-  /* 배경 이미지의 스크롤 방식에 따라 height 100vh 또는 min-height 100vh */
-  /* 여기서는 페이지 전체 높이를 차지하도록 설정 */
-  min-height: 100vh; 
-  display: flex;
-  flex-direction: column; /* 자식 요소들을 세로로 정렬 */
-}
-
-.main-hero-section {
-  width: 100%;
-  min-height: 100vh; /* 배경 이미지가 표시될 높이 */
-  background-image: url('../../assests/images/main_background.png'); /* 배경 이미지 경로 */
-  background-size: cover; /* 이미지가 섹션을 꽉 채우도록 설정 */
-  background-position: center; /* 이미지를 중앙에 정렬 */
-  background-repeat: no-repeat; /* 이미지 반복 방지 */
-  display: flex;
-  justify-content: flex-end; /* 가로 우측 정렬 */
-  align-items: flex-start; /* 세로 상단 정렬 */
-  color: white; /* 배경 이미지 위 텍스트 색상 */
-  padding-top: 24vh;
-  padding-right: 15vw;
-  box-sizing: border-box;
-}
-
-.main-hero-section p {
-  font-size: 1.5rem;
-}
-
-.hero-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.main-page-logo {
-  width: 250px;
-  height: auto;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
-  margin-bottom: 1px; /* 로고와 텍스트 사이 간격 */
-}
-
-.main-text{
-  text-align: center;
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.6));
-  margin-top: -60px; /* 로고와의 간격을 줄이기 위해 음수 마진 적용 */
-}
-
-
-.hero-content {
-  text-align: center;
-  z-index: 1; /* 배경 이미지 위에 콘텐츠가 나타나도록 */
-}
-
-/* 선택 사항: 배경 위에 어두운 오버레이를 추가하여 텍스트 가독성 높이기 */
-.main-hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* 어두운 오버레이 */
-  z-index: 0; /* 배경 이미지와 콘텐츠 사이 */
-}
-
-/* 다른 메인 콘텐츠는 헤더 아래로 자연스럽게 배치됩니다. */
-main {
-  flex-grow: 1; /* 남은 공간을 모두 차지하도록 설정 */
-  /* 헤더와 배경 섹션이 스크롤될 때 메인 콘텐츠는 그 아래에 고정될 수도 있습니다. */
-  /* 또는 모든 요소가 함께 스크롤되도록 할 수도 있습니다. */
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
   .main-hero-section {
+    background-image: url('../../assests/images/main_background_m.png');
     min-height: 60vh;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 10vh;
+    padding-left: 40vw;
     text-align: center;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     background-color: #fff;
   }
 
@@ -169,5 +98,10 @@ main {
   .main-text {
     font-size: 1.2rem;
     margin-top: -40px;
+  }
+
+  .hero-content-wrapper {
+    transform: scale(0.5); /* 크기 조정 */
+    margin-right: -100px; /* 오른쪽 여백 조정 */
   }
 }
