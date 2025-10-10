@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.b9d49557.css",
-    "main.js": "/static/js/main.131f9719.js",
+    "main.css": "/static/css/main.7c0e704a.css",
+    "main.js": "/static/js/main.42dd2743.js",
     "static/media/NotoSansKR-VariableFont_wght.ttf": "/static/media/NotoSansKR-VariableFont_wght.c51b1f27913a7e547afd.ttf",
     "static/media/introduce1.PNG": "/static/media/introduce1.303fca2a0559e992da34.PNG",
     "static/media/introduce.PNG": "/static/media/introduce.e52f2d5849dbd9296cea.PNG",
     "static/media/introduce2.PNG": "/static/media/introduce2.fad5ce3eb9e752f28120.PNG",
     "static/media/main_background.png": "/static/media/main_background.2bc2bcfe5d40c1c32f40.png",
+    "static/media/logo_8.png": "/static/media/logo_8.41e04c2ae950a7f1c586.png",
     "static/media/path.jpg": "/static/media/path.85f8d3faff4b459a3a80.jpg",
     "static/media/logo_3.PNG": "/static/media/logo_3.ab2bbb9d547dbdcee5cd.PNG",
     "static/media/Flag_of_South_Korea.svg.png": "/static/media/Flag_of_South_Korea.svg.d56d8fd46516b8dd1358.png",
@@ -21,11 +22,11 @@
     "static/media/logo_4.svg": "/static/media/logo_4.f860f5dd6ae3b6280890f69a6a9e5032.svg",
     "static/media/mainpage_logo.svg": "/static/media/mainpage_logo.02f81518d887598f04d6d634eacb227a.svg",
     "index.html": "/index.html",
-    "main.b9d49557.css.map": "/static/css/main.b9d49557.css.map",
-    "main.131f9719.js.map": "/static/js/main.131f9719.js.map"
+    "main.7c0e704a.css.map": "/static/css/main.7c0e704a.css.map",
+    "main.42dd2743.js.map": "/static/js/main.42dd2743.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9d49557.css",
-    "static/js/main.131f9719.js"
+    "static/css/main.7c0e704a.css",
+    "static/js/main.42dd2743.js"
   ]
 }
