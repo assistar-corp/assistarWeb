@@ -108,3 +108,62 @@
 .logo-container.logo-8 .partner-logo { /* 리본 로고 */
   transform: scale(0.4);
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .partner-logos-container {
+    padding: 20px 0;
+  }
+
+  .partner-logos-container:before,
+  .partner-logos-container:after {
+    width: 50px;
+  }
+
+  .partner-logos-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .logos-marquee {
+    animation: scroll 20s linear infinite;
+  }
+
+  .logo-container {
+    width: 120px;
+    height: 80px;
+    margin: 0 20px;
+  }
+
+  .logo-container.logo-1 .partner-logo {
+    transform: scale(4.0);
+  }
+
+  .logo-container.logo-2 .partner-logo {
+    transform: scale(4.0);
+  }
+
+  .logo-container.logo-3 .partner-logo {
+    transform: scale(4.0);
+  }
+
+  .logo-container.logo-4 .partner-logo {
+    transform: scale(4.0);
+  }
+
+  .logo-container.logo-5 .partner-logo {
+    transform: scale(4.0);
+  }
+
+  .logo-container.logo-6 .partner-logo {
+    transform: scale(4.0);
+  }
+
+  .logo-container.logo-7 .partner-logo {
+    transform: scale(4.0);
+  }
+
+  .logo-container.logo-8 .partner-logo {
+    transform: scale(1.6);
+  }
+}
