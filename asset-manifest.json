@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6102988b.css",
-    "main.js": "/static/js/main.ac135670.js",
+    "main.css": "/static/css/main.4b1500bc.css",
+    "main.js": "/static/js/main.e27eb243.js",
     "static/media/NotoSansKR-VariableFont_wght.ttf": "/static/media/NotoSansKR-VariableFont_wght.c51b1f27913a7e547afd.ttf",
     "static/media/introduce1.PNG": "/static/media/introduce1.303fca2a0559e992da34.PNG",
     "static/media/introduce.PNG": "/static/media/introduce.e52f2d5849dbd9296cea.PNG",
@@ -23,11 +23,11 @@
     "static/media/logo_4.svg": "/static/media/logo_4.f860f5dd6ae3b6280890f69a6a9e5032.svg",
     "static/media/mainpage_logo.svg": "/static/media/mainpage_logo.02f81518d887598f04d6d634eacb227a.svg",
     "index.html": "/index.html",
-    "main.6102988b.css.map": "/static/css/main.6102988b.css.map",
-    "main.ac135670.js.map": "/static/js/main.ac135670.js.map"
+    "main.4b1500bc.css.map": "/static/css/main.4b1500bc.css.map",
+    "main.e27eb243.js.map": "/static/js/main.e27eb243.js.map"
   },
   "entrypoints": [
-    "static/css/main.6102988b.css",
-    "static/js/main.ac135670.js"
+    "static/css/main.4b1500bc.css",
+    "static/js/main.e27eb243.js"
   ]
 }
