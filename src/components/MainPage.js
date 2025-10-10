@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 import './css/MainPage.css';
 import mainPageLogo from '../assests/images/mainpage_logo.svg';
 
@@ -8,7 +7,6 @@ import PartnerLogos from './PartnerLogos';
 function MainPage() {
   return (
     <div className="main-page-container">
-      <Header /> 
       
       <section className="main-hero-section">
         <div className="hero-content-wrapper">

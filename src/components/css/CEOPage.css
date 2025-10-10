@@ -95,3 +95,43 @@
     font-size: 1.3rem;
     margin-top:50px;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .ceo-intro-section {
+    min-height: 40vh;
+    padding: 2rem 1rem;
+  }
+
+  .ceo-intro-section h1 {
+    font-size: 2rem;
+  }
+
+  .ceo-intro-section p {
+    font-size: 1rem;
+  }
+
+  .ceo-second-section {
+    padding: 3rem 1rem;
+  }
+
+  .ceo-intro-footer {
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .ceo-introduce-logo {
+    width: 60%;
+    max-width: 250px;
+  }
+
+  .ceo-intro-footer-text {
+    text-align: center;
+  }
+
+  .ceo-intro-footer p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}

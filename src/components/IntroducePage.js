@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from './Header';
 
 import './css/IntroducePage.css';
 import introduceLogo from '../assests/images/introduce1.PNG';
@@ -7,7 +6,6 @@ import introduceLogo from '../assests/images/introduce1.PNG';
 function IntroducePage() {
   return (
     <div className="introduce-page">
-      <Header />
       <main className="introduce-main">
         <section className="intro-section">
           <div className="intro-content">

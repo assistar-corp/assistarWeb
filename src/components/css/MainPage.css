@@ -71,3 +71,23 @@ main {
   /* 헤더와 배경 섹션이 스크롤될 때 메인 콘텐츠는 그 아래에 고정될 수도 있습니다. */
   /* 또는 모든 요소가 함께 스크롤되도록 할 수도 있습니다. */
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .main-hero-section {
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .main-page-logo {
+    width: 200px;
+  }
+
+  .main-text {
+    font-size: 1.2rem;
+    margin-top: -40px;
+  }
+}
