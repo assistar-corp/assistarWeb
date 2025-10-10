@@ -11,7 +11,7 @@ function IntroducePage() {
       <main className="introduce-main">
         <section className="intro-section">
           <div className="intro-content">
-            <h1>기술 혁신 · 품질 우선 · 사람중심</h1>
+            <h1>기술 혁신 · 품질 우선 · 사람 중심</h1>
             <p>가치를 바탕으로 운동기구의 새로운 기준을 제시하는 기업</p>
             <br />
             <p>피트니스 기구 및 시스템 전문 제조기업</p>

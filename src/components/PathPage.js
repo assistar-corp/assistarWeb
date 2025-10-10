@@ -11,7 +11,7 @@ function PathPage() {
         <section className="path-intro-section">
           <div className="path-intro-content">
             <h1>COMPANY</h1>
-            <h2>위치를 안내해드립니다.</h2>
+            <p>위치를 안내해드립니다.</p>
           </div>
         </section>
         <section className="path-body-section">

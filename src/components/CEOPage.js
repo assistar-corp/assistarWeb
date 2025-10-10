@@ -9,7 +9,6 @@ function CEOPage() {
         <section className="ceo-intro-section">
           <div className="ceo-intro-content">
             <h1>CEO 인사말</h1>
-            <br />
             <p>(주)어시스타를 방문해 주셔서 감사합니다.</p>
           </div>
         </section>
