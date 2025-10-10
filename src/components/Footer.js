@@ -1,12 +1,40 @@
-import React from 'react';
-import { Instagram, Youtube, Facebook } from "lucide-react";
+import React, { useState, useEffect } from 'react';
 import './css/Footer.css';
 
+// Function to set the viewport meta tag
+const setViewport = (content) => {
+  let viewportMeta = document.querySelector('meta[name="viewport"]');
+  if (!viewportMeta) {
+    viewportMeta = document.createElement('meta');
+    viewportMeta.setAttribute('name', 'viewport');
+    document.head.appendChild(viewportMeta);
+  }
+  viewportMeta.setAttribute('content', content);
+};
+
 export default function Footer() {
+  const [isPcMode, setIsPcMode] = useState(false);
+
+  useEffect(() => {
+    const currentViewMode = localStorage.getItem('viewMode');
+    if (currentViewMode === 'pc') {
+      setIsPcMode(true);
+      setViewport('width=1280');
+    } else {
+      setIsPcMode(false);
+      setViewport('width=device-width, initial-scale=1');
+    }
+  }, []);
+
+  const handleToggleViewMode = () => {
+    const newMode = !isPcMode;
+    localStorage.setItem('viewMode', newMode ? 'pc' : 'mobile');
+    window.location.reload();
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
-
         <div className="footer-bottom">
           <div className="footer-bottom-left">
             <div className="footer-logo-container">
@@ -38,6 +66,9 @@ export default function Footer() {
           <div className="footer-bottom-right">
             <a href="/">이용약관</a>
             <a href="/">개인정보처리방침</a>
+            <button onClick={handleToggleViewMode} className="footer-view-mode-button">
+              {isPcMode ? '모바일 버전' : 'PC 버전'}
+            </button>
           </div>
         </div>
       </div>

@@ -128,3 +128,17 @@
 .footer-bottom-right a:hover {
   color: #000;
 }
+
+.footer-view-mode-button {
+  background-color: transparent;
+  border: none;
+  color: #4b5563;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.875rem;
+  font-family: inherit;
+}
+
+.footer-view-mode-button:hover {
+  color: #000;
+}
