@@ -75,7 +75,7 @@
 .intro-new-layout {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify: center;
     gap: 10rem; /* 텍스트랑 사진 사이 gap 조정  */ 
     max-width: 1200px;
     width: 100%;
@@ -135,15 +135,20 @@
   .intro-content {
     text-align: center;
     right: 0;
+    margin-top: 40px;
   }
 
   .intro-section h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .intro-section p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     text-align: center;
+  }
+
+  .intro-section h3 {
+    font-size: 1.0rem;
   }
 
   .intro-second-section {
@@ -167,6 +172,10 @@
 
   .vision-text-section, .user-content-section {
     text-align: center;
+  }
+
+  .user-content-section p {
+    font-size: 0.8rem;
   }
 
   .short-vertical-line {

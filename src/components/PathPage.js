@@ -37,7 +37,7 @@ function PathPage() {
           <div className="location-section">
             <div className="location-description">
               <h2>청라국제도시 지점</h2>
-              <p>{cheongnaAddress}</p>
+              <p>인천광역시 서구 봉수대로 806, 인천 아시아드 주경기장 <span className="mobile-break">(스포츠 창업 지원실)</span></p>
             </div>
             <div className="map-container">
               <iframe

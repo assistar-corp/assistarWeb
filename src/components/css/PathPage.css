@@ -127,8 +127,14 @@
   .location-section h2 {
     font-size: 1.3rem;
   }
+  .location-section p {
+    font-size: 0.8rem;
+  }
 
   .map-container {
     height: 300px;
+  }
+  .mobile-break {
+    display: block;
   }
 }

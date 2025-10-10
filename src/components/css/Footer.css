@@ -128,3 +128,37 @@
 .footer-bottom-right a:hover {
   color: #000;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-bottom-left {
+    font-size: 0.75rem;
+  }
+
+  .footer-bottom-left p {
+    margin-bottom: 0.3rem;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+  }
+
+  .footer-logo-container {
+    margin-bottom: 1rem;
+  }
+
+  .footer-bottom-right {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .mobile-break {
+    display: block;
+  }
+}

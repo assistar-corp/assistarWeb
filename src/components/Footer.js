@@ -1,4 +1,5 @@
 import React from 'react';
+import { Instagram, Youtube, Facebook } from "lucide-react";
 import './css/Footer.css';
 
 export default function Footer() {
@@ -22,8 +23,7 @@ export default function Footer() {
             </div>
             <div>
               <p>
-                상호 : 주식회사 어시스타&nbsp;&nbsp;&nbsp;&nbsp;대표이사 : 이주영&nbsp;&nbsp;&nbsp;&nbsp;사업자등록번호 :
-                5468603128
+                상호 : 주식회사 어시스타&nbsp;&nbsp;&nbsp;&nbsp;대표이사 : 이주영&nbsp;&nbsp;&nbsp;&nbsp; <span className="mobile-break">사업자등록번호 :5468603128</span>
               </p>
               <p>
                 주소 : 22212 인천광역시 미추홀구 인하로100, 인하드림센터1관 605호 &nbsp;&nbsp;&nbsp;&nbsp;대표전화 :

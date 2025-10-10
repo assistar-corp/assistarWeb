@@ -117,7 +117,7 @@
 
   .ceo-intro-footer {
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     text-align: center;
   }
 
@@ -132,6 +132,10 @@
 
   .ceo-intro-footer p {
     text-align: center;
+    font-size: 0.7rem;
+  }
+
+  .ceo-intro-footer h3{
     font-size: 1rem;
   }
 }
