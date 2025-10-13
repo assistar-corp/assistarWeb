@@ -112,7 +112,7 @@
   }
 
   .logos-marquee {
-    animation-duration: 25s; /* 모바일에서 속도 조절 */
+    animation-duration: 30s; /* 모바일에서 속도 조절 */
   }
 
   .logo-container {
