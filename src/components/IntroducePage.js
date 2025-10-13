@@ -9,11 +9,16 @@ function IntroducePage() {
       <main className="introduce-main">
         <section className="intro-section">
           <div className="intro-content">
-            <h1>기술 혁신 · 품질 우선 · 사람 중심</h1>
-            <p>가치를 바탕으로 운동기구의 새로운 기준을 제시하는 기업</p>
-            
-            <p>피트니스 기구 및 시스템 전문 제조기업</p>
-            <h3>주식회사 어시스타</h3>
+            <div className="desktop-content">
+              <h1>기술 혁신 · 품질 우선 · 사람 중심</h1>
+              <p>가치를 바탕으로 운동기구의 새로운 기준을 제시하는 기업</p>
+              <p>피트니스 기구 및 시스템 전문 제조기업</p>
+              <h3>주식회사 어시스타</h3>
+            </div>
+            <div className="mobile-content">
+              <h1>회사개요</h1>
+              <h3>피트니스 기구 및 시스템 전문 제조 기업</h3>
+            </div>
           </div>
         </section>
         <section className="intro-second-section">

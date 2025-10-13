@@ -49,6 +49,9 @@
     text-align: right;
 }
 
+.mobile-content {
+    display: none; /* 모바일 콘텐츠는 기본적으로 숨김 */
+}
 
 .intro-section h1 {
   font-size: 3rem;
