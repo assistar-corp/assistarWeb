@@ -17,8 +17,9 @@ function IntroducePage() {
             </div>
             <div className="mobile-content">
               <h1>회사개요</h1>
-              <h3>피트니스 기구 및 시스템 전문 제조 기업</h3>
+              <p>피트니스 기구 및 시스템 전문 제조 기업</p>
             </div>
+
           </div>
         </section>
         <section className="intro-second-section">
