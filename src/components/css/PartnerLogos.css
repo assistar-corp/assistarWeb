@@ -130,8 +130,11 @@
     transform: scale(1.0);
   }
 
-  /* logo_8(리본 로고)만 크기를 약간 줄입니다 */
+/* 개별 로고 크기 조정 (모바일) */
   .logo-container.logo-8 .partner-logo {
     transform: scale(0.3);
+  }
+  .logo-container.logo-1 .partner-logo {
+    transform: scale(1.3);
   }
 }
