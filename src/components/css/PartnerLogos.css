@@ -1,9 +1,15 @@
 /* 컨테이너 기본 스타일 */
 .partner-logos-container {
+  /* CSS 변수를 사용하여 슬라이드 너비를 동적으로 계산 */
+  --logo-width: 150px;
+  --logo-margin: 60px;
+  --num-logos: 8; /* JS에 있는 로고 개수와 일치해야 합니다 */
+  --slide-width: calc(var(--num-logos) * (var(--logo-width) + (var(--logo-margin) * 2)));
+
   padding: 40px 0;
   background-color: #ffffff;
   text-align: center;
-  overflow: hidden; 
+  overflow: hidden;
   position: relative;
 }
 
@@ -31,87 +37,67 @@
   font-size: 24px;
   margin-bottom: 30px;
   color: #333;
-  z-index: 3; 
+  z-index: 3;
   position: relative;
 }
 
 .logos-marquee {
-  display: flex; /* 내부 슬라이드를 수평으로 나열 */
-  width: 200%; /* 필수: 슬라이드 2개를 포함하도록 너비를 200%로 설정 */
-  animation: scroll 40s linear infinite; /* 애니메이션 적용 */
-  white-space: nowrap; /* 내부 요소가 줄바꿈되지 않게 설정 */
+  display: flex;
+  /* 계산된 슬라이드 너비의 2배로 설정 */
+  width: calc(var(--slide-width) * 2);
+  animation: scroll 40s linear infinite;
 }
 
-/* 개별 로고 슬라이드 (원본 + 복제본) */
 .logos-slide {
   display: flex;
-  flex-shrink: 0; /* 축소되지 않도록 설정 */
-  justify-content: space-around; /* 로고 간격 분산 */
   align-items: center;
-  width: 50%; /* 필수: 전체 .logos-marquee의 50% 너비를 차지하게 설정 */
+  justify-content: space-around;
+  /* 슬라이드 너비를 계산된 값으로 설정 */
+  width: var(--slide-width);
 }
 
 .logo-container {
-  width: 150px;
+  width: var(--logo-width);
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 60px;
+  margin: 0 var(--logo-margin);
+  flex-shrink: 0; /* 로고 크기가 줄어들지 않도록 방지 */
 }
 
-/* 개별 로고 스타일 */
 .partner-logo {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
 }
 
-/* Keyframes 애니메이션 정의 (무한 루프) */
+/* 애니메이션: 계산된 슬라이드 너비만큼 정확히 이동 */
 @keyframes scroll {
   0% {
-    transform: translateX(0%);
+    transform: translateX(0);
   }
-  /* 100% 지점: 정확히 슬라이드 하나(50%) 만큼 왼쪽으로 이동하여 루프 생성 */
   100% {
-    transform: translateX(-50%); 
+    transform: translateX(calc(var(--slide-width) * -1));
   }
 }
 
-/* 개별 로고 크기 조정 */
+/* 개별 로고 크기 조정 (데스크톱) */
+.logo-container.logo-1 .partner-logo { transform: scale(1.7); }
+.logo-container.logo-2 .partner-logo { transform: scale(0.8); }
+.logo-container.logo-3 .partner-logo { transform: scale(1.0); }
+.logo-container.logo-4 .partner-logo { transform: scale(1.0); }
+.logo-container.logo-5 .partner-logo { transform: scale(1.0); }
+.logo-container.logo-6 .partner-logo { transform: scale(1.0); }
+.logo-container.logo-7 .partner-logo { transform: scale(1.2); }
+.logo-container.logo-8 .partner-logo { transform: scale(0.4); }
 
-.logo-container.logo-1 .partner-logo { /* 기술보증 로고 */
-  transform: scale(1.7);
-}
-
-.logo-container.logo-2 .partner-logo { /* 네임택 로고*/
-  transform: scale(0.8);
-}
-
-.logo-container.logo-3 .partner-logo { /* 엔디바이스 로고 */
-  transform: scale(1.0);
-}
-
-.logo-container.logo-4 .partner-logo { /* 인천광역시 로고 */
-  transform: scale(1.0);
-}
-
-.logo-container.logo-5 .partner-logo { /* 인천대 로고*/
-  transform: scale(1.0);
-}
-.logo-container.logo-6 .partner-logo { /* 인하대 로고 */
-  transform: scale(1.0);
-}
-.logo-container.logo-7 .partner-logo { /* 알앤디 로고 */
-  transform: scale(1.2);
-}
-.logo-container.logo-8 .partner-logo { /* 리본 로고 */
-  transform: scale(0.4);
-}
-
-/* Mobile Styles */
+/* 모바일 스타일 */
 @media (max-width: 768px) {
   .partner-logos-container {
+    /* 모바일용 변수 재정의 */
+    --logo-width: 100px;
+    --logo-margin: 20px;
     padding: 10px 0;
   }
 
@@ -126,44 +112,26 @@
   }
 
   .logos-marquee {
-    animation: scroll 20s linear infinite;
+    animation-duration: 25s; /* 모바일에서 속도 조절 */
   }
 
   .logo-container {
-    width: 160px;
     height: 80px;
-    margin: 0 20px;
   }
 
-  .logo-container.logo-1 .partner-logo {
-    transform: scale(5.0);
-  }
-
-  .logo-container.logo-2 .partner-logo {
-    transform: scale(5.0);
-  }
-
-  .logo-container.logo-3 .partner-logo {
-    transform: scale(5.0);
-  }
-
-  .logo-container.logo-4 .partner-logo {
-    transform: scale(5.0);
-  }
-
-  .logo-container.logo-5 .partner-logo {
-    transform: scale(5.0);
-  }
-
-  .logo-container.logo-6 .partner-logo {
-    transform: scale(5.0);
-  }
-
+  /* 모바일에서는 대부분의 로고 스케일을 통일합니다 */
+  .logo-container.logo-1 .partner-logo,
+  .logo-container.logo-2 .partner-logo,
+  .logo-container.logo-3 .partner-logo,
+  .logo-container.logo-4 .partner-logo,
+  .logo-container.logo-5 .partner-logo,
+  .logo-container.logo-6 .partner-logo,
   .logo-container.logo-7 .partner-logo {
-    transform: scale(5.0);
+    transform: scale(1.0);
   }
 
+  /* logo_8(리본 로고)만 크기를 약간 줄입니다 */
   .logo-container.logo-8 .partner-logo {
-    transform: scale(1.2);
+    transform: scale(0.3);
   }
 }
