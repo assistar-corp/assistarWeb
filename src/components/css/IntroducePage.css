@@ -141,6 +141,14 @@
     margin-top: 40px;
   }
 
+  .desktop-content {
+    display: none; /* 데스크톱 콘텐츠 숨기기 */
+  }
+
+  .mobile-content {
+    display: block; /* 모바일 콘텐츠 보여주기 */
+  }
+
   .intro-section h1 {
     font-size: 1.2rem;
   }
