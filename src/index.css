@@ -1,9 +1,4 @@
-@font-face {
-  font-family: 'Noto Sans KR';
-  src: url('./assests/fonts/NotoSansKR-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 body {
   /* 글로벌 글꼴 수정 */
