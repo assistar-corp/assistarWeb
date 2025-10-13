@@ -29,7 +29,6 @@ function CEOPage() {
               <p>가장 강력한 파트너가 될 것을 약속 드립니다.</p>
               <br />
               <br />
-              <br />
               <h3><strong>주식회사 어시스타 대표이사 이 주 영</strong></h3>
             </div>
           </div>
