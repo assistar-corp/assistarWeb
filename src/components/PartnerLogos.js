@@ -1,8 +1,8 @@
 import './css/PartnerLogos.css';
 
 import logo1 from '../assests/images/etc/logo_1.svg';
-import logo2 from '../assests/images/etc/logo_2.PNG';
-import logo3 from '../assests/images/etc/logo_3.PNG';
+import logo2 from '../assests/images/etc/logo_2.webp';
+import logo3 from '../assests/images/etc/logo_3.webp';
 import logo4 from '../assests/images/etc/logo_4.svg';
 import logo5 from '../assests/images/etc/logo_5.svg';
 import logo6 from '../assests/images/etc/logo_6.svg';
@@ -32,7 +32,7 @@ function PartnerLogos() {
         <div className="logos-slide">
             {logos.map((logo, index) => (
                 <div key={`original-${index}`} className={`logo-container ${logo.id}`}>
-                    <img src={logo.src} alt={logo.alt} className="partner-logo" />
+                    <img src={logo.src} alt={logo.alt} className="partner-logo" loading="lazy" />
                 </div>
             ))}
         </div>
@@ -41,7 +41,7 @@ function PartnerLogos() {
         <div className="logos-slide">
             {logos.map((logo, index) => (
                 <div key={`duplicate-${index}`} className={`logo-container ${logo.id}`}>
-                    <img src={logo.src} alt={logo.alt} className="partner-logo" />
+                    <img src={logo.src} alt={logo.alt} className="partner-logo" loading="lazy" />
                 </div>
             ))}
         </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './css/IntroducePage.css';
-import introduceLogo from '../assests/images/introduce1.PNG';
+import introduceLogo from '../assests/images/introduce1.webp';
 
 function IntroducePage() {
   return (

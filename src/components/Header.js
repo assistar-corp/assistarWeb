@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './css/Header.css';
-import koreaFlag from '../assests/images/Flag_of_South_Korea.svg.png';
+import koreaFlag from '../assests/images/Flag_of_South_Korea.svg.webp';
 import mainHeaderLogo from '../assests/images/Main_Header_logo.svg';
 import { Menu, X } from 'lucide-react';
 
