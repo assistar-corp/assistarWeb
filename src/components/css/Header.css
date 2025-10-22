@@ -116,7 +116,7 @@
 /* 드롭다운 메뉴 스타일 */
 .dropdown-menu {
   position: absolute;
-  top: 54px;
+  top: 56px;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(10, 10, 10, 0.8);
