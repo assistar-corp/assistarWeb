@@ -11,7 +11,7 @@
 .main-hero-section {
   width: 100%;
   min-height: 100vh; /* 배경 이미지가 표시될 높이 */
-  background-image: url('../../assests/images/main_background.png'); /* 배경 이미지 경로 */
+  background-image: url('../../assests/images/main_background.webp'); /* 배경 이미지 경로 */
   background-size: cover; /* 이미지가 섹션을 꽉 채우도록 설정 */
   background-position: center; /* 이미지를 중앙에 정렬 */
   background-repeat: no-repeat; /* 이미지 반복 방지 */
@@ -75,7 +75,7 @@ main {
 /* Mobile Styles */
 @media (max-width: 768px) {
   .main-hero-section {
-    background-image: url('../../assests/images/main_background_m.png');
+    background-image: url('../../assests/images/main_background_m.webp');
     min-height: 60vh;
     justify-content: flex-end;
     align-items: flex-start;

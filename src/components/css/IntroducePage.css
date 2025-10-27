@@ -14,7 +14,7 @@
 .intro-section {
   width: 100%;
   min-height: 50vh; /* Increased height */
-  background-image: url('../../assests/images/introduce.PNG');
+  background-image: url('../../assests/images/introduce.webp');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
