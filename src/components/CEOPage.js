@@ -14,7 +14,7 @@ function CEOPage() {
         </section>
         <section className="ceo-second-section">
           <div className="ceo-intro-footer">
-            <img src={introduceLogo} alt="Assistar Logo" className="ceo-introduce-logo" />
+            <img src={introduceLogo} alt="Assistar Logo" className="ceo-introduce-logo" loading="lazy" />
             <div className="ceo-intro-footer-text">
               <p>우리는 열정만으로 부상의 위험과 시행착오를 감수해야 했고,</p>
               <p>운동의 잠재력을 온전히 끌어내지 못했습니다.</p>

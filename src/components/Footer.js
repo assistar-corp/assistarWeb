@@ -14,11 +14,13 @@ export default function Footer() {
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%EC%A7%80%EA%B5%AC%EB%B3%B8.PNG-KVah1mAN25dtMeuARtLucIXCCvTW5o.png"
                 alt="어시스타 심볼"
                 className="footer-logo-symbol"
+                loading="lazy"
               />
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%EA%B8%80%EC%94%A8.PNG-8WX0AOiNuOOG1XNIxMtGWCUFvUQjiE.png"
                 alt="ASSISTAR STRENGTH EQUIPMENT"
                 className="footer-logo-text"
+                loading="lazy"
               />
             </div>
             <div>

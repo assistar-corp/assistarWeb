@@ -24,7 +24,7 @@ function IntroducePage() {
         </section>
         <section className="intro-second-section">
           <div className="intro-new-layout">
-            <img src={introduceLogo} alt="Assistar New Logo" className="introduce-logo" />
+            <img src={introduceLogo} alt="Assistar New Logo" className="introduce-logo" loading="lazy" />
             <div className="text-sections-container">
               <div className="vision-text-section">
                 <p className="vision-title"><strong>VISION</strong></p>
