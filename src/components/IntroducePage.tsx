@@ -13,13 +13,13 @@ import certi7 from '../assests/images/assistar_certi/7.png';
 
 const certificationImages: InfiniteImageSliderItem[] = [
   // title은 이미지 아래에 표시되는 문구입니다. 실제 인증명으로 바꿀 때 이 값만 수정하면 됩니다.
-  { src: certi1, alt: '어시스타 인증서 1', title: '인증서 1', className: 'assistar-certi-1' },
-  { src: certi2, alt: '어시스타 인증서 2', title: '인증서 2', className: 'assistar-certi-2' },
-  { src: certi3, alt: '어시스타 인증서 3', title: '인증서 3', className: 'assistar-certi-3' },
-  { src: certi4, alt: '어시스타 인증서 4', title: '인증서 4', className: 'assistar-certi-4' },
-  { src: certi5, alt: '어시스타 인증서 5', title: '인증서 5', className: 'assistar-certi-5' },
-  { src: certi6, alt: '어시스타 인증서 6', title: '인증서 6', className: 'assistar-certi-6' },
-  { src: certi7, alt: '어시스타 인증서 7', title: '인증서 7', className: 'assistar-certi-7' },
+  { src: certi1, alt: '어시스타 인증서 1', title: '공장등록증', className: 'assistar-certi-1' },
+  { src: certi2, alt: '어시스타 인증서 2', title: '벤처기업확인서', className: 'assistar-certi-2' },
+  { src: certi3, alt: '어시스타 인증서 3', title: '연구개발전담부서', className: 'assistar-certi-3' },
+  { src: certi4, alt: '어시스타 인증서 4', title: 'USA 상표권', className: 'assistar-certi-4' },
+  { src: certi5, alt: '어시스타 인증서 5', title: '상표등록증1', className: 'assistar-certi-5' },
+  { src: certi6, alt: '어시스타 인증서 6', title: '상표등록증2', className: 'assistar-certi-6' },
+  { src: certi7, alt: '어시스타 인증서 7', title: '상표등록증3', className: 'assistar-certi-7' },
 ];
 
 const IntroducePage: FC = () => {

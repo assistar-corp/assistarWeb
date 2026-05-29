@@ -2,6 +2,7 @@ import React, { Suspense, lazy, FC } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ImageProtection from './components/ImageProtection';
 
 import './App.css';
 
@@ -26,6 +27,7 @@ const AppContent: FC = () => {
 
   return (
     <>
+      <ImageProtection />
       {showHeader && <Header />}
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
