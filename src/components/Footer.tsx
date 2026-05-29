@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Instagram, Youtube, Facebook } from "lucide-react";
 import './css/Footer.css';
 
-export default function Footer() {
+const Footer: FC = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -43,4 +43,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

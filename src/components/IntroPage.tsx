@@ -1,9 +1,8 @@
-
-import React, { useEffect } from 'react';
+import React, { FC, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ReactComponent as IntroLogo } from '../assests/images/intro_logo.svg';
 
-function IntroPage() {
+const IntroPage: FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -33,6 +32,6 @@ function IntroPage() {
       <IntroLogo style={{ width: '150px', fill: 'black' }} />
     </div>
   );
-}
+};
 
 export default IntroPage;

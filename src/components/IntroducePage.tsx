@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import './css/IntroducePage.css';
 import introduceLogo from '../assests/images/introduce1.webp';
 
-function IntroducePage() {
+const IntroducePage: FC = () => {
   return (
     <div className="introduce-page">
       <main className="introduce-main">
@@ -47,6 +47,6 @@ function IntroducePage() {
 
     </div>
   );
-}
+};
 
 export default IntroducePage;

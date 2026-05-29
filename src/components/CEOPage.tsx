@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './css/CEOPage.css';
 import introduceLogo from '../assests/images/introduce_logo.svg';
 
-function CEOPage() {
+const CEOPage: FC = () => {
   return (
     <div className="ceo-page">
       <main className="ceo-main">
@@ -36,6 +36,6 @@ function CEOPage() {
       </main>
     </div>
   );
-}
+};
 
 export default CEOPage;

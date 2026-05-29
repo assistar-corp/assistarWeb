@@ -1,4 +1,5 @@
 import './css/PartnerLogos.css';
+import { FC } from 'react';
 
 import logo1 from '../assests/images/etc/logo_1.svg';
 import logo2 from '../assests/images/etc/logo_2.webp';
@@ -7,21 +8,26 @@ import logo4 from '../assests/images/etc/logo_4.svg';
 import logo5 from '../assests/images/etc/logo_5.svg';
 import logo6 from '../assests/images/etc/logo_6.svg';
 import logo7 from '../assests/images/etc/logo_7.jpg';
-import logo8 from '../assests/images/etc/logo_8.png'; 
+import logo8 from '../assests/images/etc/logo_8.png';
 
+interface Logo {
+  src: string;
+  alt: string;
+  id: string;
+}
 
-const logos = [
-  { src: logo1, alt: 'Partner 1', id: 'logo-1' }, // 기술 보증 로고
-  { src: logo2, alt: 'Partner 2', id: 'logo-2' }, // 네임텍 로고
-  { src: logo3, alt: 'Partner 3', id: 'logo-3' }, // 엔디바이스 로고
-  { src: logo4, alt: 'Partner 4', id: 'logo-4' }, // 인천광역시 로고
-  { src: logo5, alt: 'Partner 5', id: 'logo-5' }, // 인천대 로고
-  { src: logo6, alt: 'Partner 6', id: 'logo-6' }, // 인하대 로고
-  { src: logo7, alt: 'Partner 7', id: 'logo-7' }, // 알앤디 로고
-  { src: logo8, alt: 'Partner 8', id: 'logo-8' }, // 리본 로고
+const logos: Logo[] = [
+  { src: logo1, alt: 'Partner 1', id: 'logo-1' },
+  { src: logo2, alt: 'Partner 2', id: 'logo-2' },
+  { src: logo3, alt: 'Partner 3', id: 'logo-3' },
+  { src: logo4, alt: 'Partner 4', id: 'logo-4' },
+  { src: logo5, alt: 'Partner 5', id: 'logo-5' },
+  { src: logo6, alt: 'Partner 6', id: 'logo-6' },
+  { src: logo7, alt: 'Partner 7', id: 'logo-7' },
+  { src: logo8, alt: 'Partner 8', id: 'logo-8' },
 ];
 
-function PartnerLogos() {
+const PartnerLogos: FC = () => {
   return (
     <div className="partner-logos-container">
       <h2 className="partner-logos-title">파트너</h2>
@@ -49,6 +55,6 @@ function PartnerLogos() {
       </div>
     </div>
   );
-}
+};
 
 export default PartnerLogos;

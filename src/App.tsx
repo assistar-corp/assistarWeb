@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, FC } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -12,15 +12,15 @@ const IntroducePage = lazy(() => import('./components/IntroducePage'));
 const PathPage = lazy(() => import('./components/PathPage'));
 const CEOPage = lazy(() => import('./components/CEOPage'));
 
-function App() {
+const App: FC = () => {
   return (
     <Router>
       <AppContent />
     </Router>
   );
-}
+};
 
-function AppContent() {
+const AppContent: FC = () => {
   const location = useLocation();
   const showHeader = location.pathname !== '/';
 
@@ -39,6 +39,6 @@ function AppContent() {
       <Footer />
     </>
   );
-}
+};
 
 export default App;

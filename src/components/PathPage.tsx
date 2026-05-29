@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './css/PathPage.css';
 
-function PathPage() {
+const PathPage: FC = () => {
   const headquarterAddress = "인천광역시 미추홀구 인하로 100, 인하드림센터 1관 605호";
   const cheongnaAddress = "인천광역시 서구 봉수대로 806, 인천 아시아드 주경기장 (스포츠 창업 지원실)";
 
@@ -27,9 +27,9 @@ function PathPage() {
                 height="450"
                 frameBorder="0"
                 style={{ border: 0 }}
-                allowFullScreen=""
+                allowFullScreen
                 aria-hidden="false"
-                tabIndex="0"
+                tabIndex={0}
                 title="Headquarter Location"
               ></iframe>
             </div>
@@ -46,9 +46,9 @@ function PathPage() {
                 height="450"
                 frameBorder="0"
                 style={{ border: 0 }}
-                allowFullScreen=""
+                allowFullScreen
                 aria-hidden="false"
-                tabIndex="0"
+                tabIndex={0}
                 title="Cheongna Branch Location"
               ></iframe>
             </div>
@@ -57,6 +57,6 @@ function PathPage() {
       </main>
     </div>
   );
-}
+};
 
 export default PathPage;

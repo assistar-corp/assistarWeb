@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './css/MainPage.css';
 import mainPageLogo from '../assests/images/mainpage_logo.svg';
 
 import PartnerLogos from './PartnerLogos';
 
-function MainPage() {
+const MainPage: FC = () => {
   return (
     <div className="main-page-container">
       
@@ -18,6 +18,6 @@ function MainPage() {
       <PartnerLogos />
     </div>
   );
-}
+};
 
 export default MainPage;

@@ -1,28 +1,30 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, FC } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './css/Header.css';
 import koreaFlag from '../assests/images/Flag_of_South_Korea.svg.webp';
 import mainHeaderLogo from '../assests/images/Main_Header_logo.svg';
 import { Menu, X } from 'lucide-react';
 
-function Header() {
+const Header: FC = () => {
   const location = useLocation();
-  const [isCompanyMenuOpen, setCompanyMenuOpen] = useState(false);
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const timeoutRef = useRef(null);
+  const [isCompanyMenuOpen, setCompanyMenuOpen] = useState<boolean>(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const handleMouseEnter = () => {
-    clearTimeout(timeoutRef.current);
+  const handleMouseEnter = (): void => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
     setCompanyMenuOpen(true);
   };
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = (): void => {
     timeoutRef.current = setTimeout(() => {
       setCompanyMenuOpen(false);
     }, 200);
   };
 
-  const toggleMobileMenu = () => {
+  const toggleMobileMenu = (): void => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
@@ -85,6 +87,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;
