@@ -128,6 +128,34 @@
     font-weight: 450;
 }
 
+.intro-certi-section {
+  width: 100%;
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.assistar-certi-slider {
+  /* 인증서 이미지의 기본 크기/간격/속도는 IntroducePage.tsx의 props에서 수정합니다. */
+  max-width: 100%;
+}
+
+.assistar-certi-slider .infinite-slider-image {
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* 특정 인증서만 크기 보정이 필요할 때 아래 클래스에 transform을 추가하면 됩니다. */
+.assistar-certi-1,
+.assistar-certi-2,
+.assistar-certi-3,
+.assistar-certi-4,
+.assistar-certi-5,
+.assistar-certi-6,
+.assistar-certi-7 {
+  transform: scale(1);
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .intro-section {
@@ -188,5 +216,15 @@
     right: auto;
     margin: 0 auto;
   }
-}
 
+  .intro-certi-section {
+    padding: 3rem 0;
+  }
+
+  .assistar-certi-slider {
+    --slider-image-width: 150px !important;
+    --slider-image-height: 220px !important;
+    --slider-image-gap: 20px !important;
+    --slider-duration: 28s !important;
+  }
+}
